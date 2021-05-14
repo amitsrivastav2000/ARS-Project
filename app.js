@@ -214,16 +214,16 @@ app.get("/user",function(req,res){
   });
 
 });
-app.get("/pay.html",function(req,res){
-  res.render("test");
-});
+// app.get("/pay.html",function(req,res){
+//   res.render("test");
+// });
 app.get("/index.php",function(req,res){
   res.sendFile(__dirname+"/index.php")
 })
 app.post("/flightdisplay",function(req,res){
   const price=req.body.pr;
   console.log(price);
-  res.render("test",{amt: price});
+  // res.render("test",{amt: price});
 });
 // res.render("manageflights.ejs", {link:"/manageflights"});
 
